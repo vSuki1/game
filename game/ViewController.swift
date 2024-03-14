@@ -14,9 +14,12 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var movableobject2: UIView!
    
+    @IBOutlet weak var reseutOut: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        reseutOut.isHidden = true
     }
 
     @IBOutlet weak var labletoWIn: UILabel!
@@ -24,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func movement(_ sender: UIButton) {
     
-          
+        reseutOut.isHidden = false
         
         
               
@@ -45,6 +48,7 @@ class ViewController: UIViewController {
     
     @IBAction func movement2(_ sender: UIButton) {
   
+        reseutOut.isHidden = false
         
         self.movableobject2.transform = self.movableobject2.transform.translatedBy(x: 0, y: -CGFloat(moveit))
         
@@ -56,6 +60,14 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+       
+
+    }
+    
+    
     
     
 }
