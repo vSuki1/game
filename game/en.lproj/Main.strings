@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; configuration.title = "Reset"; ObjectID = "6Ub-tb-WrA"; */
+"6Ub-tb-WrA.configuration.title" = "Reset";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6Ub-tb-WrA"; */
+"6Ub-tb-WrA.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "CLICK"; ObjectID = "JAc-Mh-yN0"; */
+"JAc-Mh-yN0.configuration.title" = "CLICK";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JAc-Mh-yN0"; */
+"JAc-Mh-yN0.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "CLICK"; ObjectID = "OLG-bZ-qTW"; */
+"OLG-bZ-qTW.configuration.title" = "CLICK";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OLG-bZ-qTW"; */
+"OLG-bZ-qTW.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "TOUCH TO WIN"; ObjectID = "xHI-xW-Lkf"; */
+"xHI-xW-Lkf.text" = "TOUCH TO WIN";
