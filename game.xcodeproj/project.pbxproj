@@ -13,6 +13,7 @@
 		FB3F70F52BA09465004810C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB3F70F42BA09465004810C9 /* Base */; };
 		FB3F70F72BA09467004810C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3F70F62BA09467004810C9 /* Assets.xcassets */; };
 		FB3F70FA2BA09467004810C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB3F70F92BA09467004810C9 /* Base */; };
+		FBAA2D202BA4709000C4329C /* levelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA2D1F2BA4709000C4329C /* levelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		FB3F70F62BA09467004810C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3F70F92BA09467004810C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3F70FB2BA09467004810C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAA2D1C2BA46F7900C4329C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FBAA2D1F2BA4709000C4329C /* levelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				FB3F70EF2BA09465004810C9 /* SceneDelegate.swift */,
 				FB3F70F12BA09465004810C9 /* ViewController.swift */,
 				FB3F70F32BA09465004810C9 /* Main.storyboard */,
+				FBAA2D1F2BA4709000C4329C /* levelViewController.swift */,
 				FB3F70F62BA09467004810C9 /* Assets.xcassets */,
 				FB3F70F82BA09467004810C9 /* LaunchScreen.storyboard */,
 				FB3F70FB2BA09467004810C9 /* Info.plist */,
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3F70F22BA09465004810C9 /* ViewController.swift in Sources */,
+				FBAA2D202BA4709000C4329C /* levelViewController.swift in Sources */,
 				FB3F70EE2BA09465004810C9 /* AppDelegate.swift in Sources */,
 				FB3F70F02BA09465004810C9 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,6 +156,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB3F70F42BA09465004810C9 /* Base */,
+				FBAA2D1C2BA46F7900C4329C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
