@@ -20,6 +20,9 @@ class levelViewController: UIViewController {
             // do this before the var changes
         }
     }
+    
+    @IBOutlet weak var deathbeam: UILabel!
+    
     @IBOutlet weak var labelRespawn: UILabel!
     
     @IBOutlet weak var keyImage: UIImageView!
@@ -35,7 +38,7 @@ class levelViewController: UIViewController {
         super.viewDidLoad()
         keyImage.image = UIImage(named: "key")
         
-        
+        charLabel.frame = labelRespawn.frame
         
     }
     
@@ -72,12 +75,24 @@ class levelViewController: UIViewController {
         isButtonHeldRight = false
         moveLabelRepeatedly()
     }
-    
+    func checkCollision() {
+        if charLabel.frame.intersects(deathbeam.frame) {
+            charLabel.frame = labelRespawn.frame
+        }
+    }
     func moveLabelRepeatedly() {
         guard isButtonheldUp else { return }
         
-        self.charLabel.transform = self.charLabel.transform.translatedBy(x: 0, y: -CGFloat(moveDist))
-        
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+            
+            
+            self.charLabel.transform = self.charLabel.transform.translatedBy(x: 0, y: -CGFloat(self.moveDist))
+        }, completion: nil)
+            
+        checkCollision()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.moveLabelRepeatedly()
@@ -88,9 +103,13 @@ class levelViewController: UIViewController {
     func moveLabel2Repeatedly() {
         guard isButtonheldDown else { return }
         
-        self.charLabel.transform = self.charLabel.transform.translatedBy(x: 0, y: CGFloat(moveDist))
-        
-        
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+            self.charLabel.transform = self.charLabel.transform.translatedBy(x: 0, y: CGFloat(self.moveDist))
+        }, completion: nil)
+        checkCollision()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.moveLabel2Repeatedly()
         }
@@ -99,9 +118,16 @@ class levelViewController: UIViewController {
     func moveLabel2RightRepeatedly() {
         guard isButtonHeldRight else { return }
         
-        self.charLabel.transform = self.charLabel.transform.translatedBy(x: CGFloat(moveDist), y: 0)
         
-        
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+            
+            self.charLabel.transform = self.charLabel.transform.translatedBy(x: CGFloat(self.moveDist), y: 0)
+        }, completion: nil)
+            
+        checkCollision()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.moveLabel2RightRepeatedly()
         }
@@ -110,8 +136,16 @@ class levelViewController: UIViewController {
         func moveLabelLeftRepeatedly() {
             guard isButtonHeldLeft else { return }
             
-            self.charLabel.transform = self.charLabel.transform.translatedBy(x: CGFloat(-moveDist), y: 0)
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           options: [.curveLinear],
+                           animations: {
             
+                self.charLabel.transform = self.charLabel.transform.translatedBy(x: CGFloat(-self.moveDist), y: 0)
+                
+            }, completion: nil)
+          
+            checkCollision()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.moveLabelLeftRepeatedly()

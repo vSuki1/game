@@ -156,8 +156,16 @@
                                     <action selector="downB:" destination="4Sp-4Y-rcC" eventType="touchUpInside" id="5MZ-7V-n6y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Wy-fAh">
+                                <rect key="frame" x="151" y="460" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la7-la-SIg">
-                                <rect key="frame" x="192" y="404" width="42" height="21"/>
+                                <rect key="frame" x="175" y="621" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -170,6 +178,7 @@
                     <navigationItem key="navigationItem" id="4pB-0a-lxX"/>
                     <connections>
                         <outlet property="charLabel" destination="y06-Na-L61" id="YXb-f3-VPI"/>
+                        <outlet property="deathbeam" destination="xrW-Wy-fAh" id="WFb-PY-h5k"/>
                         <outlet property="keyImage" destination="Jvh-9f-HPq" id="Wbf-FO-oHY"/>
                         <outlet property="labelRespawn" destination="la7-la-SIg" id="gvq-8G-Adc"/>
                     </connections>
@@ -206,6 +215,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
